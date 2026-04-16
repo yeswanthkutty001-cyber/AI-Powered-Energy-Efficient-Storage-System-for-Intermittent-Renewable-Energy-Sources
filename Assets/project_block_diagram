@@ -1,0 +1,25 @@
+digraph Battery_Project {
+	fontsize=12 nodesep=0.6 rankdir=TB size=8
+	node [color=lightblue fontname=Helvetica shape=box style=filled]
+	Battery [label="Li-ion Battery Pack
+(12V, 18Ah, 3p3s + BMS)"]
+	Thermal [label="Thermal Monitoring
+(Thermocouples + Copper Strips
+MAX6675 + Arduino)"]
+	Inverter [label="DC–AC Inverter
+(12V → 3-Phase 415V,
+MOSFET + Transformers)"]
+	Control [label="Real-time Control & Display
+(Arduino + LCD)"]
+	AI [label="AI/ML Models
+(SOC, SOH, Fault Prediction,
+Energy Dispatch)"]
+	Grid [label="Renewable Grid & Load
+Integration"]
+	Battery -> Thermal
+	Battery -> Inverter
+	Thermal -> Control
+	Inverter -> Control
+	Control -> AI
+	AI -> Grid
+}
