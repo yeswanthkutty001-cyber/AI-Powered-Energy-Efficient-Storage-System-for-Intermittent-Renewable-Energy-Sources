@@ -63,7 +63,7 @@ The system implements a smart Battery Management System (BMS), AI-driven analyti
 * IoT Communication Layer
 * Intelligent Energy Dispatch Module
 
-![BMS BQ76920](Images_Videos/BMS_BQ76920.jpeg)
+![BMS BQ76920](Assets/BMS_SLD.png)
 
 ![Inverter SLD](Assets/Arduino_Inverter_SLD.jpg)
 
